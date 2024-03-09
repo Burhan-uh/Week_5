@@ -1,0 +1,29 @@
+.circle {
+    background-color: red;
+    height: 10em;
+    width: 10em;
+    border-radius: 100%;
+    animation: move_the_circle 10s infinite;
+}
+
+@keyframes move_the_circle {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    25% {
+        transform: translate(87.5vw, 0);
+    }
+
+    50% {
+        transform: translate(87.5vw, 72vh);
+    }
+
+    75% {
+        transform: translate(0vw, 72vh);
+    }
+
+    100% {
+        transform: translate(0, 0);
+    }
+}

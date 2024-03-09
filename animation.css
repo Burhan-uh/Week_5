@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: yellow;
+    padding: 0.5em;
+    font-weight: bold;
+    font-size: 1em;
+    text-align: center;
+    list-style: none;
+
+}
+nav > ul > li {
+    position: relative;
+    width: 100%;
+}
+nav ul ul {
+    position: absolute;
+    background-color: aqua;
+    display: block;
+    font-size: 1em;
+    width: 100%;
+    padding: 0;
+    transform: rotate(90deg);
+    z-index: -1;
+    transform-origin: bottom right;
+    transform: rotate(90deg) translate(-50vw);
+    transition: transform 0.5s ease-in;
+}
+
+nav > ul > li:hover ul {
+    transform: none;
+    z-index: 1;
+}
+/*
+nav ul ul li:hover {
+    background-color: hotpink;
+}
+*/
